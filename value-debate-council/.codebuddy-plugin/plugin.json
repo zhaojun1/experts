@@ -1,0 +1,89 @@
+{
+  "name": "value-debate-council",
+  "version": "1.0.0",
+  "description": "Multi-expert value investing debate council with dynamic topic-driven debates. Analysts self-select into relevant topics and challenge each other until professional conclusions converge.",
+  "author": {
+    "name": "zhaojun",
+    "email": "zhaojun@skyguard.dev"
+  },
+  "agents": [
+    "./agents/value-debate-council-team-lead.md",
+    "./agents/ba-pinyou.md",
+    "./agents/mang-shenfou.md",
+    "./agents/tang-xicai.md",
+    "./agents/bo-ceguan.md"
+  ],
+  "expertType": "team",
+  "agentName": "value-debate-council-team-lead",
+  "teamInfo": {
+    "leadAgent": "value-debate-council-team-lead",
+    "memberAgents": ["ba-pinyou", "mang-shenfou", "tang-xicai", "bo-ceguan"]
+  },
+
+  "displayName": {
+    "en": "Value Investing Debate Council",
+    "zh": "价值投资辨论会"
+  },
+  "profession": {
+    "en": "Value Investing Debate Council",
+    "zh": "价值投资辨论会"
+  },
+  "displayDescription": {
+    "en": "Four analysts with distinct investment philosophies debate each stock: Quality Moat vs Contrarian Risk vs Financial Valuation vs Strategy Competition. Through structured argument and rebuttal, we reach rigorous conclusions you can trust.",
+    "zh": "四派分析师按议题动态辩论个股：议题驱动、专家自选择发言、主理人判断收敛，每个议题得出专业结论。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我辨论分析XX公司，值得投吗？",
+    "en": "Debate and analyze Company X — is it worth investing?"
+  },
+  "plugin": "value-debate-council",
+  "tags": [
+    { "en": "Value Investing", "zh": "价值投资" },
+    { "en": "Multi-Expert Debate", "zh": "多专家辩论" },
+    { "en": "Stock Analysis", "zh": "个股分析" }
+  ],
+  "quickPrompts": [
+    { "en": "Debate and analyze Company X — is it worth investing?", "zh": "帮我辨论分析XX公司，值得投吗？" },
+    { "en": "Analyze Company X's moat and competitive position", "zh": "帮我看XX的护城河和竞争格局怎么样" },
+    { "en": "Valuation check on Company X — is the price right?", "zh": "帮我算算XX现在估值合不合理" }
+  ],
+  "members": [
+    {
+      "id": "value-debate-council-team-lead",
+      "displayName": { "en": "Gu Lanzhi", "zh": "顾览之" },
+      "profession": { "en": "Research Editor", "zh": "研究主编" },
+      "avatar": "avatars/value-debate-council-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "ba-pinyou",
+      "displayName": { "en": "Ba Pinyou", "zh": "巴品优" },
+      "profession": { "en": "Quality Moat Analyst", "zh": "质量护城河分析师" },
+      "avatar": "avatars/ba-pinyou.png",
+      "role": "member"
+    },
+    {
+      "id": "mang-shenfou",
+      "displayName": { "en": "Mang Shenfou", "zh": "芒审否" },
+      "profession": { "en": "Contrarian Risk Analyst", "zh": "逆向风险分析师" },
+      "avatar": "avatars/mang-shenfou.png",
+      "role": "member"
+    },
+    {
+      "id": "tang-xicai",
+      "displayName": { "en": "Tang Xicai", "zh": "唐析财" },
+      "profession": { "en": "Financial Valuation Analyst", "zh": "财务估值分析师" },
+      "avatar": "avatars/tang-xicai.png",
+      "role": "member"
+    },
+    {
+      "id": "bo-ceguan",
+      "displayName": { "en": "Bo Ceguan", "zh": "波策观" },
+      "profession": { "en": "Strategy & Competition Analyst", "zh": "战略竞争分析师" },
+      "avatar": "avatars/bo-ceguan.png",
+      "role": "member"
+    }
+  ]
+}
