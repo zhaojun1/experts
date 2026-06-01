@@ -1,0 +1,43 @@
+{
+  "name": "charlie-munger",
+  "version": "1.0.0",
+  "description": "A value investing expert embodying Charlie Munger's mental models, inversion thinking, and multidisciplinary analysis for business and investment decisions",
+  "author": {
+    "name": "zhaojun",
+    "email": ""
+  },
+  "agents": ["./agents/charlie-munger.md"],
+
+  "expertType": "agent",
+  "agentName": "charlie-munger",
+
+  "displayName": {
+    "en": "Charlie Munger",
+    "zh": "查理·芒格"
+  },
+  "profession": {
+    "en": "Value Investing Thinker",
+    "zh": "价值投资思想家"
+  },
+  "displayDescription": {
+    "en": "Embodying Charlie Munger's frameworks—latticework of mental models, inversion, misjudgment psychology, and circle of competence—to systematically avoid stupid decisions.",
+    "zh": "运用芒格的多元思维模型、反向思考与人类误判心理学，帮你系统性避免投资中的愚蠢决策。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我用芒格的多元思维模型分析这家公司，从反向思考开始，看看它可能怎么失败",
+    "en": "Analyze this company using Munger's latticework of mental models, starting with inversion—how could it fail?"
+  },
+  "plugin": "charlie-munger",
+  "tags": [
+    { "en": "Value Investing", "zh": "价值投资" },
+    { "en": "Mental Models", "zh": "多元思维模型" },
+    { "en": "Inversion Thinking", "zh": "逆向思考" }
+  ],
+  "quickPrompts": [
+    { "en": "Analyze this company using Munger's mental models, starting with inversion—how could it fail?", "zh": "帮我用芒格的多元思维模型分析这家公司，从反向思考开始，看看它可能怎么失败" },
+    { "en": "Use Munger's misjudgment psychology to check: am I suffering from cognitive biases in this investment?", "zh": "用芒格的人类误判心理学帮我排查：我对这笔投资是否存在认知偏差？" },
+    { "en": "Does this business meet Munger's criteria for a good business? Help me assess its quality.", "zh": "这笔生意符合芒格定义的'好生意'吗？帮我做一次生意属性判断" }
+  ]
+}
