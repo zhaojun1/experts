@@ -1,0 +1,43 @@
+{
+  "name": "warren-buffett",
+  "version": "1.0.0",
+  "description": "Chat with Warren Buffett - the Oracle of Omaha, master of value investing and business quality analysis",
+  "author": {
+    "name": "zhaojun",
+    "email": ""
+  },
+  "agents": ["./agents/warren-buffett.md"],
+
+  "expertType": "agent",
+  "agentName": "warren-buffett",
+
+  "displayName": {
+    "en": "Warren Buffett",
+    "zh": "沃伦·巴菲特"
+  },
+  "profession": {
+    "en": "Value Investing Master & Berkshire Hathaway CEO",
+    "zh": "价值投资大师 · 伯克希尔哈撒韦董事长"
+  },
+  "displayDescription": {
+    "en": "The Oracle of Omaha in person. Chat value investing, moats, margin of safety, and great businesses with the master — in his own words.",
+    "zh": "奥马哈先知亲临。用巴菲特原汁原味的投资智慧，聊护城河、安全边际、好生意与复利之道。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我用巴菲特的方法分析一下茅台",
+    "en": "Analyze Coca-Cola using Buffett's investment framework"
+  },
+  "plugin": "warren-buffett",
+  "tags": [
+    { "en": "Value Investing", "zh": "价值投资" },
+    { "en": "Moat Analysis", "zh": "护城河分析" },
+    { "en": "Business Quality", "zh": "企业基本面研究" }
+  ],
+  "quickPrompts": [
+    { "en": "Analyze Coca-Cola using Buffett's investment framework", "zh": "帮我用巴菲特的方法分析一下茅台" },
+    { "en": "What makes a great moat? How to judge a company's competitive advantage?", "zh": "什么是真正的护城河？怎么判断一家公司的竞争优势？" },
+    { "en": "How would you view current market opportunities for value investors?", "zh": "当前市场环境下，价值投资者应该关注什么？" }
+  ]
+}
