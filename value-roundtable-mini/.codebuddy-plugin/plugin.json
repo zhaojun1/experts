@@ -1,0 +1,88 @@
+{
+  "name": "value-roundtable-mini",
+  "version": "1.0.0",
+  "description": "Mini value investing roundtable — same 4 analysts, streamlined format. Each analyst speaks 1-3 times per topic, lead synthesizes final verdict. Designed for efficient analysis with minimal compute.",
+  "author": {
+    "name": "zhaojun",
+    "email": "zhaojun@skyguard.dev"
+  },
+  "agents": [
+    "./agents/value-roundtable-mini-team-lead.md",
+    "./agents/mini-ba-pinyou.md",
+    "./agents/mini-mang-shenfou.md",
+    "./agents/mini-tang-xicai.md",
+    "./agents/mini-bo-ceguan.md"
+  ],
+  "expertType": "team",
+  "agentName": "value-roundtable-mini-team-lead",
+  "teamInfo": {
+    "leadAgent": "value-roundtable-mini-team-lead",
+    "memberAgents": ["mini-ba-pinyou", "mini-mang-shenfou", "mini-tang-xicai", "mini-bo-ceguan"]
+  },
+  "displayName": {
+    "en": "Value Roundtable Mini",
+    "zh": "投资座谈会·迷你版"
+  },
+  "profession": {
+    "en": "Value Roundtable Mini",
+    "zh": "投资座谈会·迷你版"
+  },
+  "displayDescription": {
+    "en": "Streamlined 4-analyst roundtable: each speaks 1-3 times per topic, no extended back-and-forth. Fast, efficient, still multi-perspective.",
+    "zh": "精简版四人投资座谈会，每人每议题限制3次发言、保底1次，无反复辩论，快速输出多维度综合结论。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "帮我座谈分析XX公司，值得投吗？",
+    "en": "Roundtable analysis of Company X — is it worth investing?"
+  },
+  "plugin": "value-roundtable-mini",
+  "tags": [
+    { "en": "Value Investing", "zh": "价值投资" },
+    { "en": "Fast Analysis", "zh": "快速分析" },
+    { "en": "Stock Analysis", "zh": "个股分析" }
+  ],
+  "quickPrompts": [
+    { "en": "Roundtable analysis of Company X — is it worth investing?", "zh": "帮我座谈分析XX公司，值得投吗？" },
+    { "en": "Quick assessment of Company X moat and valuation", "zh": "帮我快速评估XX的护城河和估值" },
+    { "en": "Is Company X's current price a good entry point?", "zh": "XX现在的价格是好的买入机会吗？" }
+  ],
+  "members": [
+    {
+      "id": "value-roundtable-mini-team-lead",
+      "displayName": { "en": "Gu Lanzhi", "zh": "顾览之" },
+      "profession": { "en": "Research Editor", "zh": "研究主编" },
+      "avatar": "avatars/value-roundtable-mini-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "mini-ba-pinyou",
+      "displayName": { "en": "Ba Pinyou", "zh": "巴品优" },
+      "profession": { "en": "Quality Moat Analyst", "zh": "质量护城河分析师" },
+      "avatar": "avatars/mini-ba-pinyou.png",
+      "role": "member"
+    },
+    {
+      "id": "mini-mang-shenfou",
+      "displayName": { "en": "Mang Shenfou", "zh": "芒审否" },
+      "profession": { "en": "Contrarian Risk Analyst", "zh": "逆向风险分析师" },
+      "avatar": "avatars/mini-mang-shenfou.png",
+      "role": "member"
+    },
+    {
+      "id": "mini-tang-xicai",
+      "displayName": { "en": "Tang Xicai", "zh": "唐析财" },
+      "profession": { "en": "Financial Valuation Analyst", "zh": "财务估值分析师" },
+      "avatar": "avatars/mini-tang-xicai.png",
+      "role": "member"
+    },
+    {
+      "id": "mini-bo-ceguan",
+      "displayName": { "en": "Bo Ceguan", "zh": "波策观" },
+      "profession": { "en": "Strategy & Competition Analyst", "zh": "战略竞争分析师" },
+      "avatar": "avatars/mini-bo-ceguan.png",
+      "role": "member"
+    }
+  ]
+}
