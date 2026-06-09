@@ -1,0 +1,83 @@
+{
+  "name": "buffett-munger-team",
+  "version": "1.0.0",
+  "description": "Buffett & Munger value investment advisory team — simulates Warren Buffett and Charlie Munger to help ordinary investors analyze stocks and make investment decisions.",
+  "author": {
+    "name": "WorkBuddy",
+    "email": ""
+  },
+  "agents": [
+    "./agents/buffett-munger-team-lead.md",
+    "./agents/warren-buffett.md",
+    "./agents/charlie-munger.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "buffett-munger-team-lead",
+  "teamInfo": {
+    "leadAgent": "buffett-munger-team-lead",
+    "memberAgents": ["warren-buffett", "charlie-munger"]
+  },
+
+  "displayName": {
+    "en": "Buffett & Munger Team",
+    "zh": "巴芒投资团"
+  },
+  "profession": {
+    "en": "Buffett & Munger Team",
+    "zh": "巴芒投资团"
+  },
+  "displayDescription": {
+    "en": "Simulates Warren Buffett and Charlie Munger's thinking to help ordinary investors analyze stocks through value investing frameworks, identify moats, assess safety margins, and make rational investment decisions.",
+    "zh": "模拟巴菲特与芒格对话，以正逆双轨思维分析股票，评估企业护城河与安全边际，帮助普通投资者做出有逻辑的价值投资判断。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "巴芒对话分析茅台",
+    "en": "Analyze Kweichow Moutai using Buffett & Munger dialogue"
+  },
+  "plugin": "buffett-munger-team",
+  "tags": [
+    { "en": "Value Investing", "zh": "价值投资" },
+    { "en": "Stock Analysis", "zh": "股票分析" },
+    { "en": "Moat Assessment", "zh": "护城河评估" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Analyze Kweichow Moutai using Buffett & Munger dialogue",
+      "zh": "巴芒对话分析茅台"
+    },
+    {
+      "en": "How would Buffett & Munger view NVIDIA's investment value?",
+      "zh": "巴菲特芒格怎么看英伟达的投资价值？"
+    },
+    {
+      "en": "Use Buffett & Munger's approach to discuss BYD's competitive moat",
+      "zh": "用巴芒方式讨论比亚迪的护城河"
+    }
+  ],
+  "members": [
+    {
+      "id": "buffett-munger-team-lead",
+      "displayName": { "en": "Dialogue Moderator", "zh": "对话主持" },
+      "profession": { "en": "Chief Investment Advisor", "zh": "首席投资顾问" },
+      "avatar": "avatars/buffett-munger-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "warren-buffett",
+      "displayName": { "en": "Warren Buffett", "zh": "沃伦·巴菲特" },
+      "profession": { "en": "Value Investor", "zh": "价值投资者" },
+      "avatar": "avatars/warren-buffett.png",
+      "role": "member"
+    },
+    {
+      "id": "charlie-munger",
+      "displayName": { "en": "Charlie Munger", "zh": "查理·芒格" },
+      "profession": { "en": "Contrarian Thinker", "zh": "逆向思考者" },
+      "avatar": "avatars/charlie-munger.png",
+      "role": "member"
+    }
+  ]
+}
